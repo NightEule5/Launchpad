@@ -53,8 +53,9 @@ open class GenerateFabricModMetadataTask(@get:OutputFile val output: Path) : Def
 			ProcessResources::class.java
 		)
 		{
-			dependsOn(this)
+			it.dependsOn(this)
 		}
+		
 	}
 	
 	lateinit var metadata: FabricMod

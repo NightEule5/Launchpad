@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "strixpyrr.launchpad"
-version = "0.0.1.1"
+version = "0.0.1.3"
 
 repositories {
     mavenCentral()
