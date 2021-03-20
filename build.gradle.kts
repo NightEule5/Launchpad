@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "strixpyrr.launchpad"
-version = "0.0.1"
+version = "0.0.1.1"
 
 repositories {
     mavenCentral()
@@ -38,7 +38,7 @@ tasks()
 	{
 		kotlinOptions.useIR             = true
 		kotlinOptions.jvmTarget         = "1.8"
-		kotlinOptions.languageVersion   = "1.5"
+		kotlinOptions.languageVersion   = "1.4" // "1.5"
 		kotlinOptions.freeCompilerArgs  =
 			listOf(
 				"-Xopt-in=kotlin.RequiresOptIn"
@@ -49,7 +49,7 @@ tasks()
 	{
 		kotlinOptions.useIR             = true
 		kotlinOptions.jvmTarget         = "1.8"
-		kotlinOptions.languageVersion   = "1.5"
+		kotlinOptions.languageVersion   = "1.4" // "1.5"
 		kotlinOptions.freeCompilerArgs  =
 			listOf(
 				"-Xopt-in=kotlin.RequiresOptIn"
