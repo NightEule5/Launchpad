@@ -90,7 +90,9 @@ open class GenerateFabricModMetadataTask(@get:OutputFile val output: Path) : Def
 					  Json()
 					  {
 						  prettyPrint = produceHumanReadableOutput
-						  prettyPrintIndent = "\t"
+						  
+						  if (!produceHumanReadableOutput) prettyPrintIndent = "\t"
+						  
 						  encodeDefaults = false // Here for clarity.
 					  }
 				  )
